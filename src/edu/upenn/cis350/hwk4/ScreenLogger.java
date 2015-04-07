@@ -1,6 +1,11 @@
 package edu.upenn.cis350.hwk4;
 
-public class ScreenLogger extends Logger{
+/**
+ * Logs to Stdout
+ * 
+ * @author Douglas Dolitsky
+ */
+public class ScreenLogger extends Logger {
 
   private static Logger instance = new ScreenLogger();
   

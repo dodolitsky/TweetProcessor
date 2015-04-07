@@ -10,7 +10,11 @@ import java.util.TreeSet;
 
 import com.google.gson.stream.JsonReader;
 
-
+/**
+ * Reads and processes a .json tweet file
+ * 
+ * @author Douglas Dolitsky
+ */
 public class JSONTweetReader implements TweetReader {
   
   private Set<Tweet> tweets = new TreeSet<Tweet>();

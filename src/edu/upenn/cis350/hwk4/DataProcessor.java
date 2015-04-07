@@ -3,6 +3,11 @@ package edu.upenn.cis350.hwk4;
 import java.util.PriorityQueue;
 import java.util.Set;
 
+/**
+ * Performs the necessary operations on the data in DataStore
+ * 
+ * @author Douglas Dolitsky
+ */
 public class DataProcessor {
   
 private DataStore store;
@@ -17,6 +22,10 @@ private PriorityQueue<State> statePQ = new PriorityQueue<State>();
     assignTweetsToStates();
   }
   
+  /**
+   * Uses the Euclidean distance formula to determine in which state each
+   * tweet belongs
+   */
   private void assignTweetsToStates() {
     for (Tweet tweet : tweets) {
       State closest = null;
@@ -38,6 +47,11 @@ private PriorityQueue<State> statePQ = new PriorityQueue<State>();
     }
   }
   
+  /**
+   * Ranks the states by the number of tweets
+   * 
+   * @return a String representation of the ranking
+   */
   public String rankStatesByTweets() {
     String result = "";
     int i = 1;
@@ -50,6 +64,12 @@ private PriorityQueue<State> statePQ = new PriorityQueue<State>();
     return result;
   }
   
+  /**
+   * Lists the 10 most popular hashtags from tweets in a given state
+   * 
+   * @param state - the State to return the hashtags of
+   * @return a String representation of the list of hashtags
+   */
   public String popularHashtagsByState(State state) {  
     String result = "";
     for (Tweet tweet : state.getTweets()) {
@@ -81,6 +101,12 @@ private PriorityQueue<State> statePQ = new PriorityQueue<State>();
     return result;
   }
   
+  /**
+   * Lists how many times a certain phrase is used per hour
+   * 
+   * @param term - the phrase
+   * @return a String representation of the frequency each hour 
+   */
   public String tweetsPerHourWithTerm(String term) {
     String result = "";
     PriorityQueue<DateHour> dhs = new PriorityQueue<DateHour>();

@@ -5,6 +5,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Handles user interaction and calls the model appropriately
+ * 
+ * @author Douglas Dolitsky
+ */
 public class Main {
   static FileWriter logWriter;
   static String tweetFileName;
@@ -14,7 +19,7 @@ public class Main {
 
   /**
    * Takes in 4 arguments from the command-line:
-   * - "JSON"/"TEXT" - the type of reader
+   * - "JSON" or "TEXT" - the type of reader
    * - the name of the tweet file (.txt or .json) to be read
    * - the name of the state file (.txt) to be read
    * - the name of the log file to be written to

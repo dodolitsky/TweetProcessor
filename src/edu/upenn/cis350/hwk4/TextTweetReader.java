@@ -6,6 +6,11 @@ import java.io.IOException;
 import java.util.Set;
 import java.util.TreeSet;
 
+/**
+ * Reads and processes a .txt tweet file
+ * 
+ * @author Douglas Dolitsky
+ */
 public class TextTweetReader implements TweetReader {
   
   private Set<Tweet> tweets = new TreeSet<Tweet>();

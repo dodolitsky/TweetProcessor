@@ -2,6 +2,11 @@ package edu.upenn.cis350.hwk4;
 
 import java.util.Set;
 
+/**
+ * Calls Readers for Tweets and States and stores the data
+ * 
+ * @author Douglas Dolitsky
+ */
 public abstract class DataStore {
 
   private Set<Tweet> tweets;

@@ -3,6 +3,11 @@ package edu.upenn.cis350.hwk4;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * Logs to the given log file
+ * 
+ * @author Douglas Dolitsky
+ */
 public class FileLogger extends Logger{
   
   private static Logger instance = new FileLogger();
