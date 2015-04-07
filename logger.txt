@@ -1,0 +1,36 @@
+1427248059692:	TEXT	100_tweets.txt	states.txt	logger.txt
+1427248062238:	"2"
+1427248067733:	"state"
+1427248072781:	"California"
+1427248076684:	"q"
+1427248078764:	"Q"
+1427248078764:	program ended
+
+1427248129827:	TEXT	100_tweets.txt	states.txt	logger.txt
+1427248134337:	"Q"
+1427248134337:	program ended
+
+1427248561950:	"2"
+1427248570377:	"New Hampshire"
+1427248575045:	"Q"
+1427248575045:	program ended
+
+1427248889576:	TEXT	100_tweets.txt	states.txt	logger.txt
+1427248895125:	"3"
+1427248898477:	"kjn"
+1427248900645:	"Q"
+1427248900645:	program ended
+
+1427248942572:	TEXT	100_tweets.txt	states.txt	logger.txt
+1427248945628:	"2"
+1427248953561:	"s"
+1427248959734:	"Ohio"
+1427248961753:	"Q"
+1427248961754:	program ended
+
+1427270118131:	JSON	sample_tweets.json	states.txt	logger.txt
+1427270121965:	"2"
+1427270128448:	"New Jersey"
+1427270132379:	"Q"
+1427270132379:	program ended
+
